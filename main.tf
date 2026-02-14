@@ -12,7 +12,7 @@ data "aws_ami" "my_ami" {
   }
 }
 
-resource "aws_instance" "my_ec2-1" {
+resource "aws_instance" "my_ec2-2" {
   ami           = data.aws_ami.my_ami.id
   instance_type = "t3.micro"
   
